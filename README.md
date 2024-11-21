@@ -18,6 +18,11 @@
 ## Panaroo 
 Used for the identification of the core and accessory genomes. For this it needs the gff3 files from bakta (all in a single directory) and also a txt file containing a list of the gff3 files present in this directory. I have been running panaroo from this directory, it may work if you specify the path to the file as well, but I haven't checked.
 
+### Requirements
+1. Bakta gff3 outputs
+2. txt file containing gff3 output names
+3. Conda environment containing bakta
+
 ### Things to modify in the script (from the top)
 1. Resource allocation (number of tasks and time). I ran this with ~3000 genomes and used 24 threads. I'd reduce the number of threads and time requirement considerably with fewer genomes (panaroo scales ~quadratically), but you'd have to play with this a bit. Maybe try something like 6 or 8 threads and 6 hours (though it is less important to change the time section). It is important to change the -t in the panaroo script so it is the same as the --ntasks-per-node.
 2. --mail-user
