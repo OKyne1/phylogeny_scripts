@@ -39,3 +39,4 @@ For RAxML tree generation use the output of panaroo called core_gene_alignment_f
 2. --partition, you will save a lot of time if you can get this working in the short partition (<12h) so I would recommend submitting it to this if it can run in this time. 1.5k-2k genomes takes ~2 days.
 3. --time, adjust based on the partition you are submitting to.
 4. -n the name of the output
+5. For RAxML scripts will run faster on the arc cluster than htc, due to the number of CPUs being requested.
