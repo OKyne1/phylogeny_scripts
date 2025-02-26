@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=4
 #SBATCH --partition=short
-#SBATCH --time=02:59:00
+#SBATCH --time=00:59:00
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=trop0670@ox.ac.uk
 #SBATCH --output=/data/biol-micro-genomics/trop0670/241015_campy_gwas/gwas/bakta/outputs/bakta_%A_%a.out
